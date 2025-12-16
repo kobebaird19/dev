@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Family Tree</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Ask search engines not to index -->
+  <meta name="robots" content="noindex,nofollow" />
+  style.css
+  <!-- Cytoscape + fcose layout via CDN (no build tools needed) -->
+  https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js</script>
+  https://unpkg.com/cytoscape-fcose@2.2.0/cytoscape-fcose.js</script>
+</head>
+<body>
+  <!-- Simple access gate (MVP) -->
+  <div id="gate">
+    <div class="card">
+      <h1>Family Tree Access</h1>
+      <p>Enter the family access code to continue:</p>
+      <input id="code" type="password" placeholder="Access code" />
+      <button id="unlock">Unlock</button>
+      <p class="hint">You can change the code in <code>app.js</code>.</p>
+    </div>
+  </div>
+
+  <header>
+    <div class="left">
+      <strong>Family Tree</strong>
+    </div>
+    <div class="right">
+      <input id="search" type="text" placeholder="Search by name…" />
+      <button id="reset">Re‑center on start</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="cy"></div>
+    <aside id="panel">
+      <div id="profile">
+        <h2>Select a person</h2>
+        <p>Click a node to view details and watch their interview.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <small>Private family project (MVP). We can upgrade privacy later.</small>
+   </footer>
+
+  app.js</script>
+</body>

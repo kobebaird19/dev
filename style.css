@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; color: #222; }
+
+header, footer { padding: 10px 14px; background: #f7f7f7; border-bottom: 1px solid #e5e5e5; }
+footer { border-top: 1px solid #e5e5e5; border-bottom: none; }
+
+header .left { float: left; }
+header .right { float: right; }
+header::after { content: ""; display: table; clear: both; }
+header input { padding: 6px 8px; }
+header button { padding: 6px 10px; margin-left: 6px; }
+
+main { display: grid; grid-template-columns: 2fr 1fr; gap: 8px; height: calc(100vh - 120px); padding: 8px; }
+#cy { border: 1px solid #e5e5e5; border-radius: 6px; height: 100%; background: #fff; }
+aside#panel { border: 1px solid #e5e5e5; border-radius: 6px; padding: 10px; overflow: auto; background: #fff; }
+
+#gate { position: fixed; inset: 0; background: rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; }
+#gate .card { background: #fff; padding: 20px; border-radius: 8px; width: 360px; border: 1px solid #ddd; }
+#gate input { width: 100%; padding: 8px; margin-top: 8px; }
+#gate button { padding: 8px 12px; margin-top: 8px; }
+#gate .hint { color: #666; font-size: 12px; margin-top: 8px; }
+
+.embed iframe, .video video { width: 100%; border-radius: 6px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+``
